@@ -19,6 +19,15 @@ if(INCLUDE_OPENGL)
 endif()
 
 
+
+if(${USE_PORT_SQLITE})
+
+    add_subdirectory(base/sqlite)
+
+endif()
+
+
+
 if(NOT ${HAS_SYSTEM_UNAC})
 
 	add_subdirectory(base/unac)
